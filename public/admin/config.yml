@@ -1,0 +1,49 @@
+site_url: https://yourchoiceot.com.au
+logo_url: https://yourchoiceot.com.au/logo.svg
+media_folder: public/uploads
+public_folder: /uploads
+collections:
+  - name: pages
+    label: Pages
+    folder: content/pages
+    create: true
+    fields:
+      - { name: title, label: Title, widget: string }
+      - { name: slug, label: Slug, widget: string }
+      - { name: layout, label: Layout, widget: select, options: [home, page, service] }
+      - { name: body, label: Content, widget: markdown }
+      - { name: featured_image, label: Featured Image, widget: image, required: false }
+
+  - name: services
+    label: Services
+    folder: content/services
+    create: true
+    fields:
+      - { name: title, label: Title, widget: string }
+      - { name: slug, label: Slug, widget: string }
+      - { name: description, label: Description, widget: text }
+      - { name: body, label: Content, widget: markdown }
+      - { name: icon, label: Icon, widget: string, required: false }
+
+  - name: team
+    label: Team Members
+    folder: content/team
+    create: true
+    fields:
+      - { name: name, label: Name, widget: string }
+      - { name: role, label: Role, widget: string }
+      - { name: bio, label: Biography, widget: markdown }
+      - { name: image, label: Photo, widget: image }
+
+  - name: settings
+    label: Site Settings
+    files:
+      - name: general
+        label: General Settings
+        file: content/settings.json
+        fields:
+          - { name: site_title, label: Site Title, widget: string }
+          - { name: site_description, label: Site Description, widget: text }
+          - { name: phone, label: Phone Number, widget: string }
+          - { name: email, label: Email, widget: string }
+          - { name: address, label: Address, widget: text }
