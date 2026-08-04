@@ -6,11 +6,6 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      colors: {
-        teal: '#0f766e',
-        'teal-light': '#14b8a6',
-        purple: '#7c3aed',
-      },
       fontFamily: {
         sans: ['var(--font-sans)', 'system-ui', 'sans-serif'],
       },
