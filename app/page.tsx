@@ -144,22 +144,22 @@ export default function Home() {
           <h2 className="text-white text-center mb-12">Certified & Approved</h2>
           <div className="credentials-grid">
             <div className="credential-item">
-              <div className="credential-icon text-3xl mb-3">✓</div>
+              <div className="text-5xl mb-4">✓</div>
               <h4>Occupational Therapy Australia</h4>
               <p>Certified Member</p>
             </div>
             <div className="credential-item">
-              <div className="credential-icon text-3xl mb-3">✓</div>
+              <div className="text-5xl mb-4">✓</div>
               <h4>NDIS Provider</h4>
               <p>Complex Modifications</p>
             </div>
             <div className="credential-item">
-              <div className="credential-icon text-3xl mb-3">✓</div>
+              <div className="text-5xl mb-4">✓</div>
               <h4>MAC Provider</h4>
               <p>My Aged Care Services</p>
             </div>
             <div className="credential-item">
-              <div className="credential-icon text-3xl mb-3">✓</div>
+              <div className="text-5xl mb-4">✓</div>
               <h4>Medicare Australia</h4>
               <p>Approved Provider</p>
             </div>
