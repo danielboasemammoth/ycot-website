@@ -8,85 +8,156 @@ export default function Home() {
       <Header />
       
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-teal to-teal-light text-white py-20">
-        <div className="max-w-6xl mx-auto px-4 flex items-center justify-between">
-          <div className="flex-1">
-            <h1 className="text-5xl font-bold mb-4 text-white">Independence in your home.</h1>
-            <p className="text-xl mb-8 text-teal-light">Professional home modifications and occupational therapy services for Brisbane, Gold Coast & surrounding areas.</p>
-            <div className="flex gap-4">
-              <Link href="/contact" className="btn bg-white text-teal hover:bg-gray-100">
-                Book a Consultation
-              </Link>
-              <Link href="/services" className="btn btn-outline">
-                Learn More
-              </Link>
+      <section className="hero">
+        <div className="container mx-auto px-6">
+          <div className="grid grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+            <div className="hero-content">
+              <h1>Independence in your home.</h1>
+              <p>Professional home modifications and occupational therapy services designed to enhance safety, accessibility, and quality of life for Brisbane, Gold Coast and surrounding areas.</p>
+              <div className="hero-buttons">
+                <Link href="/contact" className="btn btn-primary">
+                  Book a Consultation
+                </Link>
+                <Link href="/services" className="btn btn-outline">
+                  Explore Services
+                </Link>
+              </div>
             </div>
-          </div>
-          <div className="hidden lg:block flex-1 text-right">
-            <div className="text-7xl">🏠</div>
+            <div className="text-right">
+              <div className="text-9xl">🏠</div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Intro Section */}
-      <section className="max-w-6xl mx-auto px-4 py-16">
-        <div className="grid md:grid-cols-3 gap-8 mb-12">
-          <div className="bg-gray-100 p-6 rounded-lg">
-            <h3 className="text-2xl font-bold text-teal mb-2">25+ Years</h3>
-            <p className="text-gray-700">Experience in Occupational Therapy & home modifications</p>
-          </div>
-          <div className="bg-purple text-white p-6 rounded-lg">
-            <h3 className="text-2xl font-bold mb-2">100+ Projects</h3>
-            <p>Complex home modifications successfully completed</p>
-          </div>
-          <div className="bg-teal text-white p-6 rounded-lg">
-            <h3 className="text-2xl font-bold mb-2">NDIS Approved</h3>
-            <p>Certified provider for complex home modifications</p>
+      {/* Stats Section */}
+      <section className="bg-gray-50">
+        <div className="container mx-auto px-6 py-20">
+          <div className="features-grid">
+            <div className="feature-box">
+              <div className="feature-number">25+</div>
+              <h3>Years Experience</h3>
+              <p>In occupational therapy and home modifications</p>
+            </div>
+            <div className="feature-box primary">
+              <div className="feature-number">100+</div>
+              <h3>Projects Completed</h3>
+              <p>Complex modifications successfully delivered</p>
+            </div>
+            <div className="feature-box secondary">
+              <div className="feature-number">✓</div>
+              <h3>NDIS Approved</h3>
+              <p>Provider for complex home modifications</p>
+            </div>
           </div>
         </div>
+      </section>
 
-        {/* Mission */}
-        <div className="bg-gray-50 p-8 rounded-lg mb-12">
-          <h2 className="text-teal mb-4">Our Mission</h2>
-          <p className="text-gray-700 text-lg">Through choice, we aim to create living environments that provide independence, promote safety, and create opportunity to participate in the greater community.</p>
+      {/* Mission Section */}
+      <section>
+        <div className="container mx-auto px-6 py-20 max-w-4xl">
+          <div className="mission-box">
+            <h2>Our Mission</h2>
+            <p>Through choice, we aim to create living environments that provide independence, promote safety, and create opportunity to participate in the greater community.</p>
+          </div>
         </div>
+      </section>
 
-        {/* Services Preview */}
-        <div>
-          <h2 className="text-teal text-center mb-12">What We Offer</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition">
-              <div className="text-4xl mb-4">🏗️</div>
-              <h3 className="font-bold text-lg mb-3">Home Modifications</h3>
-              <p className="text-gray-700 mb-4">Professional assessment and design of modifications to improve accessibility, safety and independence.</p>
-              <Link href="/services#home-modifications" className="text-teal font-semibold hover:underline">Learn more →</Link>
+      {/* Services Section */}
+      <section className="bg-gray-50">
+        <div className="container mx-auto px-6 py-20">
+          <div className="text-center mb-16 max-w-2xl mx-auto">
+            <h2>What We Offer</h2>
+            <p>Comprehensive solutions tailored to your needs and goals</p>
+          </div>
+
+          <div className="grid grid-3">
+            <div className="card">
+              <div className="card-icon">🏗️</div>
+              <h3>Home Modifications</h3>
+              <p>Professional assessment and design of modifications to improve accessibility, safety and independence in your own home.</p>
+              <Link href="/services#home-modifications" className="font-semibold text-primary hover:text-primary-light">Learn more →</Link>
             </div>
 
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition">
-              <div className="text-4xl mb-4">📋</div>
-              <h3 className="font-bold text-lg mb-3">NDIS Services</h3>
-              <p className="text-gray-700 mb-4">Specialized complex home modification services approved under the National Disability Insurance Scheme.</p>
-              <Link href="/services#ndis" className="text-teal font-semibold hover:underline">Learn more →</Link>
+            <div className="card">
+              <div className="card-icon">📋</div>
+              <h3>NDIS Services</h3>
+              <p>Specialized complex home modification services approved under the National Disability Insurance Scheme with expert guidance throughout the process.</p>
+              <Link href="/services#ndis" className="font-semibold text-primary hover:text-primary-light">Learn more →</Link>
             </div>
 
-            <div className="border border-gray-200 rounded-lg p-6 hover:shadow-lg transition">
-              <div className="text-4xl mb-4">🔧</div>
-              <h3 className="font-bold text-lg mb-3">Assistive Technology</h3>
-              <p className="text-gray-700 mb-4">Assessment and prescription of equipment solutions that enhance independence and safety.</p>
-              <Link href="/services#assistive-tech" className="text-teal font-semibold hover:underline">Learn more →</Link>
+            <div className="card">
+              <div className="card-icon">🔧</div>
+              <h3>Assistive Technology</h3>
+              <p>Assessment and prescription of equipment solutions that enhance independence, safety and participation in daily activities.</p>
+              <Link href="/services#assistive-tech" className="font-semibold text-primary hover:text-primary-light">Learn more →</Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Process Section */}
+      <section>
+        <div className="container mx-auto px-6 py-20">
+          <div className="text-center mb-16 max-w-2xl mx-auto">
+            <h2>How We Work Together</h2>
+            <p>Our collaborative approach ensures the best outcomes for your home</p>
+          </div>
+
+          <div className="grid grid-3">
+            <div className="card">
+              <h3 className="text-primary">You</h3>
+              <p>You know yourself and your needs best. You understand where your home design is failing and can give insight into your requirements for improved independence and safety.</p>
+            </div>
+
+            <div className="card">
+              <h3 className="text-primary">The Builder</h3>
+              <p>The builder understands the built environment, building codes, and regulatory requirements. Our builders have extensive experience in quality home modifications.</p>
+            </div>
+
+            <div className="card">
+              <h3 className="text-primary">The OT</h3>
+              <p>With professional expertise in aging, disability and illness, we proactively research solutions and understand how needs change over time.</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="bg-teal text-white py-16 mt-12">
-        <div className="max-w-6xl mx-auto px-4 text-center">
-          <h2 className="text-white mb-4">Ready to Make Your Home Work for You?</h2>
-          <p className="text-teal-light mb-8 text-lg">Contact us today for a free initial assessment.</p>
-          <Link href="/contact" className="btn bg-white text-teal hover:bg-gray-100">
-            Get in Touch
-          </Link>
+      <section className="cta-section container mx-auto px-6 max-w-4xl">
+        <h2>Ready to Transform Your Home?</h2>
+        <p>Get in touch with us today for a free initial assessment and consultation.</p>
+        <Link href="/contact" className="btn btn-primary">
+          Start Your Journey
+        </Link>
+      </section>
+
+      {/* Credentials */}
+      <section className="bg-blue-600">
+        <div className="container mx-auto px-6 py-20">
+          <h2 className="text-white text-center mb-12">Certified & Approved</h2>
+          <div className="credentials-grid">
+            <div className="credential-item">
+              <div className="credential-icon">✓</div>
+              <h4>Occupational Therapy Australia</h4>
+              <p>Certified Member</p>
+            </div>
+            <div className="credential-item">
+              <div className="credential-icon">✓</div>
+              <h4>NDIS Provider</h4>
+              <p>Complex Modifications</p>
+            </div>
+            <div className="credential-item">
+              <div className="credential-icon">✓</div>
+              <h4>MAC Provider</h4>
+              <p>My Aged Care Services</p>
+            </div>
+            <div className="credential-item">
+              <div className="credential-icon">✓</div>
+              <h4>Medicare Australia</h4>
+              <p>Approved Provider</p>
+            </div>
+          </div>
         </div>
       </section>
 
