@@ -1,5 +1,6 @@
 import Header from '@/app/components/Header';
 import Footer from '@/app/components/Footer';
+import Link from 'next/link';
 
 export default function Gallery() {
   return (
@@ -27,9 +28,7 @@ export default function Gallery() {
             <div className="gallery-grid">
               {[1, 2, 3].map((i) => (
                 <div key={i} className="gallery-item">
-                  <svg className="w-16 h-16 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                  </svg>
+                  📷
                 </div>
               ))}
             </div>
@@ -41,9 +40,7 @@ export default function Gallery() {
             <div className="gallery-grid">
               {[1, 2, 3].map((i) => (
                 <div key={i} className="gallery-item">
-                  <svg className="w-16 h-16 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                  </svg>
+                  📷
                 </div>
               ))}
             </div>
@@ -55,9 +52,7 @@ export default function Gallery() {
             <div className="gallery-grid">
               {[1, 2, 3].map((i) => (
                 <div key={i} className="gallery-item">
-                  <svg className="w-16 h-16 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                  </svg>
+                  📷
                 </div>
               ))}
             </div>
@@ -69,9 +64,7 @@ export default function Gallery() {
             <div className="gallery-grid">
               {[1, 2, 3].map((i) => (
                 <div key={i} className="gallery-item">
-                  <svg className="w-16 h-16 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                  </svg>
+                  📷
                 </div>
               ))}
             </div>
@@ -83,9 +76,9 @@ export default function Gallery() {
           <div className="bg-teal-600 text-white p-8 rounded-lg text-center">
             <h2 className="text-white mb-4">Interested in Learning More?</h2>
             <p className="mb-6">Contact us to discuss how we can help transform your home.</p>
-            <a href="/contact" className="btn btn-primary" style={{backgroundColor: 'white', color: '#0d9488'}}>
+            <Link href="/contact" className="btn btn-primary" style={{backgroundColor: 'white', color: '#0d9488'}}>
               Get in Touch
-            </a>
+            </Link>
           </div>
         </section>
       </div>
