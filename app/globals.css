@@ -10,43 +10,75 @@
 }
 
 * {
-  @apply transition-colors duration-200;
+  transition: background-color 0.2s, color 0.2s;
 }
 
 body {
-  @apply bg-white text-gray-900;
+  background-color: white;
+  color: rgb(17, 24, 39);
 }
 
 /* Typography */
 h1 {
-  @apply text-4xl font-bold text-gray-900 mb-6;
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: rgb(17, 24, 39);
+  margin-bottom: 1.5rem;
 }
 
 h2 {
-  @apply text-3xl font-bold text-teal mb-4;
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: #0f766e;
+  margin-bottom: 1rem;
 }
 
 h3 {
-  @apply text-2xl font-semibold text-gray-900 mb-3;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgb(17, 24, 39);
+  margin-bottom: 0.75rem;
 }
 
 p {
-  @apply text-lg text-gray-700 leading-relaxed mb-4;
+  font-size: 1.125rem;
+  color: rgb(55, 65, 81);
+  line-height: 1.625;
+  margin-bottom: 1rem;
 }
 
 /* Buttons */
 .btn {
-  @apply px-6 py-3 rounded-lg font-semibold transition-all duration-200;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.2s;
 }
 
 .btn-primary {
-  @apply bg-teal text-white hover:bg-teal-light;
+  background-color: #0f766e;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #14b8a6;
 }
 
 .btn-secondary {
-  @apply bg-purple text-white hover:bg-purple-600;
+  background-color: #7c3aed;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #6d28d9;
 }
 
 .btn-outline {
-  @apply border-2 border-teal text-teal hover:bg-teal hover:text-white;
+  border: 2px solid #0f766e;
+  color: #0f766e;
+}
+
+.btn-outline:hover {
+  background-color: #0f766e;
+  color: white;
 }
