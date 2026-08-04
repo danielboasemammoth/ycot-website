@@ -22,20 +22,20 @@ export default function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-1">
-            <Link href="/" className="px-3 py-2 text-gray-700 hover:text-teal-600 font-medium text-sm transition rounded-lg hover:bg-gray-50">
+          <nav className="hidden lg:flex items-center gap-8">
+            <Link href="/" className="text-gray-700 hover:text-teal-600 font-medium text-sm transition">
               Home
             </Link>
-            <Link href="/about" className="px-3 py-2 text-gray-700 hover:text-teal-600 font-medium text-sm transition rounded-lg hover:bg-gray-50">
+            <Link href="/about" className="text-gray-700 hover:text-teal-600 font-medium text-sm transition">
               About
             </Link>
-            <Link href="/services" className="px-3 py-2 text-gray-700 hover:text-teal-600 font-medium text-sm transition rounded-lg hover:bg-gray-50">
+            <Link href="/services" className="text-gray-700 hover:text-teal-600 font-medium text-sm transition">
               Services
             </Link>
-            <Link href="/gallery" className="px-3 py-2 text-gray-700 hover:text-teal-600 font-medium text-sm transition rounded-lg hover:bg-gray-50">
+            <Link href="/gallery" className="text-gray-700 hover:text-teal-600 font-medium text-sm transition">
               Gallery
             </Link>
-            <Link href="/contact" className="px-3 py-2 text-gray-700 hover:text-teal-600 font-medium text-sm transition rounded-lg hover:bg-gray-50">
+            <Link href="/contact" className="text-gray-700 hover:text-teal-600 font-medium text-sm transition">
               Contact
             </Link>
           </nav>

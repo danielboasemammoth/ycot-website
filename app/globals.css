@@ -460,8 +460,11 @@ section.dark p, section.dark li {
 }
 
 .credential-icon {
-  font-size: 2.5rem;
+  font-size: 3rem;
   margin-bottom: 1rem;
+  display: block;
+  color: white;
+  font-weight: bold;
 }
 
 .credential-item h4 {
