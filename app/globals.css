@@ -478,7 +478,8 @@ section.dark p, section.dark li {
 
 .credential-item p {
   color: rgba(255, 255, 255, 0.85);
-  font-size: 0.9rem;
+  font-size: 0.95rem;
+  margin-bottom: 0;
 }
 
 /* CTA Section */

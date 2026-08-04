@@ -133,7 +133,7 @@ export default function Home() {
       <section className="cta-section container mx-auto px-6 max-w-4xl">
         <h2>Ready to Transform Your Home?</h2>
         <p>Get in touch with us today for a free initial assessment and consultation.</p>
-        <Link href="/contact" className="btn btn-primary">
+        <Link href="/contact" className="btn" style={{backgroundColor: 'white', color: '#0f766e'}}>
           Start Your Journey
         </Link>
       </section>
