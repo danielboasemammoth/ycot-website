@@ -30,7 +30,7 @@ export default function About() {
           <div className="team-grid">
             {/* Jamie */}
             <div className="team-card">
-              <div className="relative w-full" style={{aspectRatio: '3/2'}}>
+              <div className="relative w-full" style={{aspectRatio: '3/4'}}>
                 <Image src="/images/team/jamie.jpg" alt="Jamie Matveyeff" fill className="object-cover object-top" />
               </div>
               <div className="team-card-content">
@@ -58,7 +58,7 @@ export default function About() {
 
             {/* Sarah */}
             <div className="team-card">
-              <div className="relative w-full" style={{aspectRatio: '3/2'}}>
+              <div className="relative w-full" style={{aspectRatio: '3/4'}}>
                 <Image src="/images/team/sarah.jpg" alt="Sarah" fill className="object-cover object-top" />
               </div>
               <div className="team-card-content">
