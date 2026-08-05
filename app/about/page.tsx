@@ -1,5 +1,6 @@
 import Header from '@/app/components/Header';
 import Footer from '@/app/components/Footer';
+import Image from 'next/image';
 
 export default function About() {
   return (
@@ -29,7 +30,9 @@ export default function About() {
           <div className="team-grid">
             {/* Jamie */}
             <div className="team-card">
-              <div className="team-card-header">👨‍⚕️</div>
+              <div className="relative w-full" style={{aspectRatio: '3/2'}}>
+                <Image src="/images/team/jamie.jpg" alt="Jamie Matveyeff" fill className="object-cover object-top" />
+              </div>
               <div className="team-card-content">
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">Jamie Matveyeff</h3>
                 <p className="text-teal-600 font-semibold mb-4">Owner & Senior Occupational Therapist</p>
@@ -55,7 +58,9 @@ export default function About() {
 
             {/* Sarah */}
             <div className="team-card">
-              <div className="team-card-header">👩‍💼</div>
+              <div className="relative w-full" style={{aspectRatio: '3/2'}}>
+                <Image src="/images/team/sarah.jpg" alt="Sarah" fill className="object-cover object-top" />
+              </div>
               <div className="team-card-content">
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">Sarah</h3>
                 <p className="text-teal-600 font-semibold mb-4">Office Manager & Administration</p>

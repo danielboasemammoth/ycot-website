@@ -37,14 +37,14 @@ export default function ContactForm() {
           name="firstName"
           placeholder="First Name"
           required
-          className="border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-teal"
+          className="border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-teal-500"
         />
         <input
           type="text"
           name="lastName"
           placeholder="Last Name"
           required
-          className="border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-teal"
+          className="border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-teal-500"
         />
       </div>
 
@@ -53,7 +53,7 @@ export default function ContactForm() {
         name="email"
         placeholder="Email Address"
         required
-        className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-teal"
+        className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-teal-500"
       />
 
       <input
@@ -61,7 +61,7 @@ export default function ContactForm() {
         name="phone"
         placeholder="Phone Number"
         required
-        className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-teal"
+        className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-teal-500"
       />
 
       <textarea
@@ -69,7 +69,7 @@ export default function ContactForm() {
         placeholder="Tell us about your inquiry..."
         rows={5}
         required
-        className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-teal"
+        className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-teal-500"
       />
 
       <button

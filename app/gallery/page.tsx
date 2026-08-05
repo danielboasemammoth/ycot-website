@@ -1,6 +1,7 @@
 import Header from '@/app/components/Header';
 import Footer from '@/app/components/Footer';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Gallery() {
   return (
@@ -26,9 +27,9 @@ export default function Gallery() {
           <section>
             <h2 className="text-2xl font-bold text-gray-900 mb-6">Home Access & Ramps</h2>
             <div className="gallery-grid">
-              {[1, 2, 3].map((i) => (
-                <div key={i} className="gallery-item">
-                  📷
+              {['ramp-1.jpg', 'ramp-2.jpg', 'ramp-3.jpg'].map((img) => (
+                <div key={img} className="gallery-item relative overflow-hidden">
+                  <Image src={`/images/gallery/${img}`} alt="Home access ramp" fill className="object-cover" />
                 </div>
               ))}
             </div>
@@ -38,9 +39,9 @@ export default function Gallery() {
           <section>
             <h2 className="text-2xl font-bold text-gray-900 mb-6">Bathroom Modifications</h2>
             <div className="gallery-grid">
-              {[1, 2, 3].map((i) => (
-                <div key={i} className="gallery-item">
-                  📷
+              {['bathroom-1.jpg', 'bathroom-2.jpg', 'bathroom-3.jpg'].map((img) => (
+                <div key={img} className="gallery-item relative overflow-hidden">
+                  <Image src={`/images/gallery/${img}`} alt="Bathroom modification" fill className="object-cover" />
                 </div>
               ))}
             </div>
@@ -50,9 +51,9 @@ export default function Gallery() {
           <section>
             <h2 className="text-2xl font-bold text-gray-900 mb-6">Grab Rails & Supports</h2>
             <div className="gallery-grid">
-              {[1, 2, 3].map((i) => (
-                <div key={i} className="gallery-item">
-                  📷
+              {['grabrail-1.jpg', 'grabrail-2.jpg', 'grabrail-3.jpg'].map((img) => (
+                <div key={img} className="gallery-item relative overflow-hidden">
+                  <Image src={`/images/gallery/${img}`} alt="Grab rail installation" fill className="object-cover" />
                 </div>
               ))}
             </div>
@@ -62,9 +63,9 @@ export default function Gallery() {
           <section>
             <h2 className="text-2xl font-bold text-gray-900 mb-6">Lifts & Hoists</h2>
             <div className="gallery-grid">
-              {[1, 2, 3].map((i) => (
-                <div key={i} className="gallery-item">
-                  📷
+              {['lift-1.jpg', 'lift-2.jpg', 'lift-3.jpg'].map((img) => (
+                <div key={img} className="gallery-item relative overflow-hidden">
+                  <Image src={`/images/gallery/${img}`} alt="Lift and hoist installation" fill className="object-cover" />
                 </div>
               ))}
             </div>
@@ -76,7 +77,7 @@ export default function Gallery() {
           <div className="bg-teal-600 text-white p-8 rounded-lg text-center">
             <h2 className="text-white mb-4">Interested in Learning More?</h2>
             <p className="mb-6">Contact us to discuss how we can help transform your home.</p>
-            <Link href="/contact" className="btn btn-primary" style={{backgroundColor: 'white', color: '#0d9488'}}>
+            <Link href="/contact" className="btn" style={{backgroundColor: 'white', color: '#0d9488'}}>
               Get in Touch
             </Link>
           </div>

@@ -1,5 +1,6 @@
 import Header from '@/app/components/Header';
 import Footer from '@/app/components/Footer';
+import { IconHome, IconClipboardCheck, IconSettings } from '@/app/components/Icons';
 
 export default function Services() {
   return (
@@ -12,7 +13,7 @@ export default function Services() {
         {/* Home Modifications */}
         <section id="home-modifications" className="mb-16 pb-16 border-b">
           <div className="flex items-start gap-8">
-            <div className="flex-shrink-0 text-5xl">🏠</div>
+            <div className="flex-shrink-0" style={{color: '#0f766e'}}><IconHome className="w-16 h-16" /></div>
             <div className="flex-1">
               <h2 className="text-teal-600">Home Modifications</h2>
               <p className="text-lg text-gray-700 mb-4">When planning your home modification, it's important to involve an Occupational Therapist. We consider design aspects and personal requirements that go beyond what a builder alone can provide.</p>
@@ -41,7 +42,7 @@ export default function Services() {
         {/* NDIS */}
         <section id="ndis" className="mb-16 pb-16 border-b">
           <div className="flex items-start gap-8">
-            <div className="flex-shrink-0 text-5xl">📋</div>
+            <div className="flex-shrink-0" style={{color: '#0f766e'}}><IconClipboardCheck className="w-16 h-16" /></div>
             <div className="flex-1">
               <h2 className="text-teal-600">NDIS Complex Home Modifications</h2>
               <p className="text-lg text-gray-700 mb-4">We have years of experience successfully gaining approval and funding for well-planned home modifications under the National Disability Insurance Scheme.</p>
@@ -67,7 +68,7 @@ export default function Services() {
         {/* Assistive Technology */}
         <section id="assistive-tech">
           <div className="flex items-start gap-8">
-            <div className="flex-shrink-0 text-5xl">⚙️</div>
+            <div className="flex-shrink-0" style={{color: '#0f766e'}}><IconSettings className="w-16 h-16" /></div>
             <div className="flex-1">
               <h2 className="text-teal-600">Assistive Technology & Equipment</h2>
               <p className="text-lg text-gray-700 mb-4">Assistive technology is equipment that makes life easier, safer and promotes independence. Sometimes AT is a simpler or faster solution than progressing to home modification.</p>

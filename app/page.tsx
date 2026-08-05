@@ -1,6 +1,8 @@
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Link from 'next/link';
+import Image from 'next/image';
+import { IconHome, IconClipboardCheck, IconSettings, IconUser, IconWrench, IconDoctor } from './components/Icons';
 
 export default function Home() {
   return (
@@ -22,6 +24,15 @@ export default function Home() {
                   Explore Services
                 </Link>
               </div>
+            </div>
+            <div className="hidden md:block relative rounded-2xl overflow-hidden shadow-2xl" style={{aspectRatio: '2/3', maxHeight: '420px'}}>
+              <Image
+                src="/images/hero-image.jpg"
+                alt="Independence at home"
+                fill
+                className="object-cover"
+                priority
+              />
             </div>
           </div>
         </div>
@@ -70,21 +81,21 @@ export default function Home() {
 
           <div className="grid grid-3">
             <div className="card">
-              <div className="text-6xl mb-4" style={{color: '#0f766e'}}>🏠</div>
+              <div className="mb-4" style={{color: '#0f766e'}}><IconHome className="w-12 h-12" /></div>
               <h3>Home Modifications</h3>
               <p>Professional assessment and design of modifications to improve accessibility, safety and independence in your own home.</p>
               <Link href="/services#home-modifications" className="font-semibold text-teal-600 hover:text-teal-700">Learn more →</Link>
             </div>
 
             <div className="card">
-              <div className="text-6xl mb-4" style={{color: '#0f766e'}}>📋</div>
+              <div className="mb-4" style={{color: '#0f766e'}}><IconClipboardCheck className="w-12 h-12" /></div>
               <h3>NDIS Services</h3>
               <p>Specialized complex home modification services approved under the National Disability Insurance Scheme with expert guidance throughout the process.</p>
               <Link href="/services#ndis" className="font-semibold text-teal-600 hover:text-teal-700">Learn more →</Link>
             </div>
 
             <div className="card">
-              <div className="text-6xl mb-4" style={{color: '#0f766e'}}>⚙️</div>
+              <div className="mb-4" style={{color: '#0f766e'}}><IconSettings className="w-12 h-12" /></div>
               <h3>Assistive Technology</h3>
               <p>Assessment and prescription of equipment solutions that enhance independence, safety and participation in daily activities.</p>
               <Link href="/services#assistive-tech" className="font-semibold text-teal-600 hover:text-teal-700">Learn more →</Link>
@@ -103,24 +114,24 @@ export default function Home() {
 
           <div className="grid grid-3">
             <div className="card">
-              <div className="text-center mb-4">
-                <div className="text-5xl">👤</div>
+              <div className="text-center mb-4" style={{color: '#0f766e'}}>
+                <IconUser className="w-10 h-10 mx-auto" />
               </div>
               <h3 className="text-teal-600">You</h3>
               <p>You know yourself and your needs best. You understand where your home design is failing and can give insight into your requirements for improved independence and safety.</p>
             </div>
 
             <div className="card">
-              <div className="text-center mb-4">
-                <div className="text-5xl">🔨</div>
+              <div className="text-center mb-4" style={{color: '#0f766e'}}>
+                <IconWrench className="w-10 h-10 mx-auto" />
               </div>
               <h3 className="text-teal-600">The Builder</h3>
               <p>The builder understands the built environment, building codes, and regulatory requirements. Our builders have extensive experience in quality home modifications.</p>
             </div>
 
             <div className="card">
-              <div className="text-center mb-4">
-                <div className="text-5xl">👨‍⚕️</div>
+              <div className="text-center mb-4" style={{color: '#0f766e'}}>
+                <IconDoctor className="w-10 h-10 mx-auto" />
               </div>
               <h3 className="text-teal-600">The OT</h3>
               <p>With professional expertise in aging, disability and illness, we proactively research solutions and understand how needs change over time.</p>
@@ -142,24 +153,28 @@ export default function Home() {
       <section className="bg-teal-600">
         <div className="container mx-auto px-6 py-20">
           <h2 className="text-white text-center mb-12">Certified & Approved</h2>
-          <div className="credentials-grid">
+          <div className="credentials-grid items-center">
             <div className="credential-item">
-              <div className="text-5xl mb-4">✓</div>
+              <div className="relative w-24 h-16 mx-auto mb-4 bg-white rounded-lg p-2">
+                <Image src="/images/logos/ota-member.jpg" alt="Occupational Therapy Australia Member" fill className="object-contain rounded" />
+              </div>
               <h4>Occupational Therapy Australia</h4>
               <p>Certified Member</p>
             </div>
             <div className="credential-item">
-              <div className="text-5xl mb-4">✓</div>
+              <div className="relative w-24 h-16 mx-auto mb-4 bg-white rounded-lg p-2">
+                <Image src="/images/logos/ndis-badge.jpg" alt="NDIS Provider" fill className="object-contain rounded" />
+              </div>
               <h4>NDIS Provider</h4>
               <p>Complex Modifications</p>
             </div>
             <div className="credential-item">
-              <div className="text-5xl mb-4">✓</div>
+              <div className="text-4xl mb-4">✓</div>
               <h4>MAC Provider</h4>
               <p>My Aged Care Services</p>
             </div>
             <div className="credential-item">
-              <div className="text-5xl mb-4">✓</div>
+              <div className="text-4xl mb-4">✓</div>
               <h4>Medicare Australia</h4>
               <p>Approved Provider</p>
             </div>
