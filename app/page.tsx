@@ -25,7 +25,7 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            <div className="hidden md:block relative rounded-2xl overflow-hidden shadow-2xl" style={{aspectRatio: '2/3', maxHeight: '420px'}}>
+            <div className="hidden md:block relative rounded-2xl overflow-hidden shadow-2xl" style={{aspectRatio: '2/3', maxHeight: '420px', zIndex: 2}}>
               <Image
                 src="/images/hero-image.jpg"
                 alt="Independence at home"
