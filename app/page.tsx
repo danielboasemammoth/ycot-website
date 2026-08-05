@@ -2,7 +2,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Link from 'next/link';
 import Image from 'next/image';
-import { IconHome, IconClipboardCheck, IconSettings, IconUser, IconWrench, IconDoctor } from './components/Icons';
+import { IconHome, IconClipboardCheck, IconSettings, IconUser, IconWrench, IconCheckBadge } from './components/Icons';
 
 export default function Home() {
   return (
@@ -131,7 +131,7 @@ export default function Home() {
 
             <div className="card">
               <div className="text-center mb-4" style={{color: '#0f766e'}}>
-                <IconDoctor className="w-10 h-10 mx-auto" />
+                <IconCheckBadge className="w-10 h-10 mx-auto" />
               </div>
               <h3 className="text-teal-600">The OT</h3>
               <p>With professional expertise in aging, disability and illness, we proactively research solutions and understand how needs change over time.</p>

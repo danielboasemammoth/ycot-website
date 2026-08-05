@@ -379,6 +379,11 @@ section.dark p, section.dark li {
   font-size: 1.875rem;
 }
 
+.mission-box p {
+  color: var(--gray-800);
+  font-size: 1.15rem;
+}
+
 /* Service Cards */
 .service-card {
   background: white;
