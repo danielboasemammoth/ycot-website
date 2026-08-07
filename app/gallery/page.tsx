@@ -76,7 +76,7 @@ export default function Gallery() {
         <section className="mt-16 pt-12 border-t">
           <div className="bg-teal-600 text-white p-8 rounded-lg text-center">
             <h2 className="text-white mb-4">Interested in Learning More?</h2>
-            <p className="mb-6">Contact us to discuss how we can help transform your home.</p>
+            <p>NDIS plan managers: contact us to discuss how we can help transform your participant's home.</p>
             <Link href="/contact" className="btn" style={{backgroundColor: 'white', color: '#0d9488'}}>
               Get in Touch
             </Link>

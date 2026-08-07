@@ -18,7 +18,7 @@ export default function Home() {
               <p>Professional home modifications and occupational therapy services designed to enhance safety, accessibility, and quality of life for Brisbane, Gold Coast and surrounding areas.</p>
               <div className="hero-buttons">
                 <Link href="/contact" className="btn btn-primary">
-                  Book a Consultation
+                  NDIS Referral
                 </Link>
                 <Link href="/services" className="btn btn-outline">
                   Explore Services
@@ -143,9 +143,9 @@ export default function Home() {
       {/* CTA Section */}
       <section className="cta-section container mx-auto px-6 max-w-4xl">
         <h2>Ready to Transform Your Home?</h2>
-        <p>Get in touch with us today for a free initial assessment and consultation.</p>
+        <p>NDIS plan managers and support coordinators — get in touch with us today for a free initial assessment and consultation.</p>
         <Link href="/contact" className="btn" style={{backgroundColor: 'white', color: '#0f766e'}}>
-          Start Your Journey
+          Start Your Referral
         </Link>
       </section>
 

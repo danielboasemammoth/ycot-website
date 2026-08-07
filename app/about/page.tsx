@@ -71,7 +71,7 @@ export default function About() {
                   <div>
                     <h4 className="font-bold mb-2">Role</h4>
                     <ul className="list-disc list-inside space-y-1 text-sm">
-                      <li>First point of contact for all inquiries</li>
+                      <li>First point of contact for NDIS plan manager referrals</li>
                       <li>Manages scheduling and operations</li>
                       <li>Guides clients through our process</li>
                       <li>Brings lived experience as mother of two children with disabilities</li>

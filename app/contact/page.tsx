@@ -1,6 +1,5 @@
 import Header from '@/app/components/Header';
 import Footer from '@/app/components/Footer';
-import ContactForm from '@/app/components/ContactForm';
 import { IconPhone, IconMail, IconMapPin, IconChat } from '@/app/components/Icons';
 
 export default function Contact() {
@@ -8,18 +7,23 @@ export default function Contact() {
     <>
       <Header />
       
-      <div className="max-w-6xl mx-auto px-4 py-16">
-        <h1 className="text-teal-600 mb-2">Get In Touch</h1>
-        <p className="text-xl text-gray-600 mb-12">Initial assessments available within 6 weeks of referral.</p>
+      <div className="max-w-4xl mx-auto px-4 py-16">
+        <h1 className="text-teal-600 mb-4">Contact Us</h1>
 
+        {/* NDIS-only notice */}
+        <div className="bg-amber-50 border border-amber-200 rounded-lg p-6 mb-12">
+          <h2 className="text-amber-900 font-bold text-xl mb-2">NDIS Plan Managers & Referrers Only</h2>
+          <p className="text-amber-800">
+            Your Choice OT currently accepts referrals and inquiries exclusively from <strong>NDIS-approved plan managers and support coordinators</strong>. 
+            We do not accept self-managed referrals or general public inquiries at this time.
+          </p>
+          <p className="text-amber-800 mt-2">
+            If you are an NDIS plan manager or support coordinator looking to refer a participant for home modifications, please get in touch using the contact details below.
+          </p>
+        </div>
+
+        {/* Contact Info - single column, plan manager focused */}
         <div className="grid md:grid-cols-2 gap-12">
-          {/* Contact Form */}
-          <div>
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Send us a Message</h2>
-            <ContactForm />
-          </div>
-
-          {/* Contact Info */}
           <div>
             <h2 className="text-2xl font-bold text-gray-900 mb-6">Contact Information</h2>
             
@@ -61,50 +65,40 @@ export default function Contact() {
                   Follow us on Facebook →
                 </a>
               </div>
+            </div>
+          </div>
 
-              <div className="bg-teal-50 p-6 rounded-lg mt-8">
-                <h3 className="font-bold text-lg mb-3 text-teal-700">Your Inquiry</h3>
-                <p className="text-gray-700 text-sm">We're here to answer your questions about home modifications, NDIS services, or assistive technology. Please fill out the form and we'll be in touch within 24 hours.</p>
-              </div>
+          {/* Referral info panel */}
+          <div>
+            <div className="bg-teal-50 border border-teal-100 rounded-lg p-8 h-full">
+              <h3 className="text-teal-800 font-bold text-xl mb-4">Referring a Participant?</h3>
+              <p className="text-gray-700 mb-4">
+                To refer a participant for complex home modifications, please ensure you have the following information ready:
+              </p>
+              <ul className="space-y-3 text-gray-700 mb-6">
+                <li className="flex items-start gap-2">
+                  <span className="text-teal-600 mt-1">✓</span>
+                  <span>Participant NDIS number and plan details</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-teal-600 mt-1">✓</span>
+                  <span>Home modification requirements from OT assessment</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-teal-600 mt-1">✓</span>
+                  <span>Funding category and budget confirmation</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-teal-600 mt-1">✓</span>
+                  <span>Preferred timeline and builder preferences</span>
+                </li>
+              </ul>
+              <p className="text-gray-700 text-sm">
+                Initial assessments are typically available within 6 weeks of referral. Contact us directly to discuss your referral.
+              </p>
             </div>
           </div>
         </div>
-
-        {/* Feedback Section */}
-        <section className="mt-16 pt-16 border-t">
-          <h2 className="text-teal-600 text-center mb-8">Share Your Feedback</h2>
-          <p className="text-center text-gray-700 mb-8 max-w-2xl mx-auto">
-            We value all types of feedback. Your input helps us continually improve our services. You can share compliments, suggestions, or concerns below.
-          </p>
-          
-          <form className="max-w-2xl mx-auto bg-gray-50 p-8 rounded-lg">
-            <div className="grid md:grid-cols-2 gap-4 mb-4">
-              <input
-                type="text"
-                placeholder="First Name"
-                required
-                className="border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-teal-500"
-              />
-              <input
-                type="text"
-                placeholder="Last Name"
-                required
-                className="border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-teal-500"
-              />
-            </div>
-
-            <textarea
-              placeholder="Your feedback..."
-              rows={5}
-              required
-              className="w-full border border-gray-300 rounded-lg px-4 py-3 mb-4 focus:outline-none focus:ring-2 focus:ring-teal-500"
-            />
-
-            <button type="submit" className="w-full btn btn-secondary">
-              Submit Feedback
-            </button>
-          </form>
-        </section>
       </div>
 
       <Footer />

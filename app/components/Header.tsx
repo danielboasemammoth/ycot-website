@@ -35,7 +35,7 @@ export default function Header() {
           {/* Desktop CTA */}
           <div className="hidden lg:block">
             <Link href="/contact" className="bg-teal-600 text-white px-5 py-2 rounded-lg font-medium text-sm hover:bg-teal-700 transition">
-              Book Now
+              NDIS Referral
             </Link>
           </div>
 
@@ -75,7 +75,7 @@ export default function Header() {
             </Link>
             <div className="px-3 pt-2">
               <Link href="/contact" className="block w-full bg-teal-600 text-white px-4 py-2 rounded-lg font-medium text-sm text-center hover:bg-teal-700 transition" onClick={() => setMobileMenuOpen(false)}>
-                Book Now
+                NDIS Referral
               </Link>
             </div>
           </div>
